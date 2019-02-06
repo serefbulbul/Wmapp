@@ -8,23 +8,21 @@
 
 import UIKit
 
+protocol VehiclesViewProtocol: AnyObject {
+    
+}
+
 class VehiclesViewController: UIViewController {
 
+    private var viewModel: VehiclesViewModelProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
+
+}
+
+extension VehiclesViewController: MapViewProtocol {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

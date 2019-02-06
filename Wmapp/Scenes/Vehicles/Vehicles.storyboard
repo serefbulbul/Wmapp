@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Vehicles View Controller-->
+        <!--Vehicles-->
         <scene sceneID="dWi-7o-LRa">
             <objects>
                 <viewController storyboardIdentifier="VehiclesViewController" id="rJX-SN-hFh" customClass="VehiclesViewController" customModule="Wmapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WlM-bR-GQA"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5pc-gO-8h0"/>
+                    <navigationItem key="navigationItem" title="Vehicles" id="5pc-gO-8h0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgP-QW-kZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

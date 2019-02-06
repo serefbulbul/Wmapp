@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--Map-->
         <scene sceneID="nH3-Pf-971">
             <objects>
                 <viewController storyboardIdentifier="MapViewController" id="Wq5-YP-RTC" customClass="MapViewController" customModule="Wmapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,6 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cTZ-bb-BmD"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Map" id="Cco-FB-wyY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4g-7F-Wkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

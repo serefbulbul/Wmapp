@@ -20,6 +20,10 @@
 		744EB349220B4E4F00528089 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB348220B4E4F00528089 /* MapViewModel.swift */; };
 		744EB34B220B4E9200528089 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB34A220B4E9200528089 /* NetworkService.swift */; };
 		744EB34D220B4EA500528089 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB34C220B4EA500528089 /* PermissionManager.swift */; };
+		744EB351220B647E00528089 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB350220B647E00528089 /* BaseModel.swift */; };
+		744EB353220B648F00528089 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB352220B648F00528089 /* ErrorModel.swift */; };
+		744EB355220B678500528089 /* VehicleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB354220B678500528089 /* VehicleData.swift */; };
+		744EB357220B67C900528089 /* VehiclesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB356220B67C900528089 /* VehiclesData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		744EB348220B4E4F00528089 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		744EB34A220B4E9200528089 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		744EB34C220B4EA500528089 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		744EB350220B647E00528089 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		744EB352220B648F00528089 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		744EB354220B678500528089 /* VehicleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleData.swift; sourceTree = "<group>"; };
+		744EB356220B67C900528089 /* VehiclesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				744EB333220B4DA300528089 /* Base */,
+				744EB352220B648F00528089 /* ErrorModel.swift */,
+				744EB354220B678500528089 /* VehicleData.swift */,
+				744EB356220B67C900528089 /* VehiclesData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 		744EB333220B4DA300528089 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				744EB350220B647E00528089 /* BaseModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -405,10 +417,14 @@
 			files = (
 				744EB303220B4CF200528089 /* AppDelegate.swift in Sources */,
 				744EB349220B4E4F00528089 /* MapViewModel.swift in Sources */,
+				744EB355220B678500528089 /* VehicleData.swift in Sources */,
 				744EB347220B4E4400528089 /* VehiclesViewModel.swift in Sources */,
+				744EB357220B67C900528089 /* VehiclesData.swift in Sources */,
 				744EB345220B4E3600528089 /* MapViewController.swift in Sources */,
 				744EB34D220B4EA500528089 /* PermissionManager.swift in Sources */,
 				744EB34B220B4E9200528089 /* NetworkService.swift in Sources */,
+				744EB353220B648F00528089 /* ErrorModel.swift in Sources */,
+				744EB351220B647E00528089 /* BaseModel.swift in Sources */,
 				744EB343220B4E2F00528089 /* VehiclesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

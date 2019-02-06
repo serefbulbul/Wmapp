@@ -7,3 +7,45 @@
 //
 
 import Foundation
+import CoreLocation
+
+protocol PermissionManagerProtocol {
+    
+    static var instance: PermissionManagerProtocol { get }
+    
+}
+
+final class PermissionManager: NSObject, PermissionManagerProtocol {
+    
+    static var instance: PermissionManagerProtocol = PermissionManager()
+    
+    private let locationManager = CLLocationManager()
+    
+    private override init() {
+        super.init()
+        
+        locationManager.delegate = self
+    }
+    
+    func checkPermission() {
+        switch CLLocationManager.authorizationStatus() {
+        case .denied, .restricted:
+            print()
+        case .authorizedAlways, .authorizedWhenInUse:
+            print()
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
+}
+
+extension PermissionManager: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedAlways || status == .authorizedWhenInUse {
+            
+        }
+    }
+    
+}

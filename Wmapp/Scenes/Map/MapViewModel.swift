@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+protocol MapViewModelProtocol {
+    
+}
+
+class MapViewModel {
+    
+    private weak var view: MapViewProtocol!
+    private var networkService: NetworkServiceProtocol!
+    
+    private init() { }
+    
+    init(view: MapViewProtocol, networkService: NetworkServiceProtocol) {
+        self.view = view
+        self.networkService = networkService
+    }
+    
+}
+
+extension MapViewModel: MapViewModelProtocol {
+    
+}
