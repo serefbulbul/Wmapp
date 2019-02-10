@@ -10,24 +10,35 @@ import Foundation
 
 class VehicleData: Codable {
 
+    let name: String
     let address: String
     let coordinates: [Double]
     let engineType: String
-    let exterior: String
     let fuel: Int
+    let exterior: String
     let interior: String
-    let name: String
     let vin: String
+    
+    init(name: String, address: String, coordinates: [Double], engineType: String, fuel: Int, exterior: String, interior: String, vin: String) {
+        self.name = name
+        self.address = address
+        self.coordinates = coordinates
+        self.engineType = engineType
+        self.fuel = fuel
+        self.exterior = exterior
+        self.interior = interior
+        self.vin = vin
+    }
 
     enum CodingKeys: String, CodingKey {
 
+        case name
         case address
         case coordinates
         case engineType
-        case exterior
         case fuel
+        case exterior
         case interior
-        case name
         case vin
 
     }

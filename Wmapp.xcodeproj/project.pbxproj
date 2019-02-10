@@ -24,6 +24,13 @@
 		744EB353220B648F00528089 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB352220B648F00528089 /* ErrorModel.swift */; };
 		744EB355220B678500528089 /* VehicleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB354220B678500528089 /* VehicleData.swift */; };
 		744EB357220B67C900528089 /* VehiclesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB356220B67C900528089 /* VehiclesData.swift */; };
+		744EB359220B6AF500528089 /* VehiclesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB358220B6AF500528089 /* VehiclesTableViewCell.swift */; };
+		744EB35B220B6CB500528089 /* WMCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB35A220B6CB500528089 /* WMCoder.swift */; };
+		744EB35F220B716E00528089 /* VehiclePartStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB35E220B716E00528089 /* VehiclePartStatus.swift */; };
+		744EB361220B721400528089 /* EngineType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB360220B721400528089 /* EngineType.swift */; };
+		74D2552E220DE8F4003A2054 /* MockVehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2552D220DE8F4003A2054 /* MockVehiclesView.swift */; };
+		74D25530220DE974003A2054 /* VehiclesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2552F220DE974003A2054 /* VehiclesViewModelTests.swift */; };
+		74D25532220DEA9C003A2054 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D25531220DEA9C003A2054 /* MockNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,13 @@
 		744EB352220B648F00528089 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		744EB354220B678500528089 /* VehicleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleData.swift; sourceTree = "<group>"; };
 		744EB356220B67C900528089 /* VehiclesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesData.swift; sourceTree = "<group>"; };
+		744EB358220B6AF500528089 /* VehiclesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesTableViewCell.swift; sourceTree = "<group>"; };
+		744EB35A220B6CB500528089 /* WMCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMCoder.swift; sourceTree = "<group>"; };
+		744EB35E220B716E00528089 /* VehiclePartStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePartStatus.swift; sourceTree = "<group>"; };
+		744EB360220B721400528089 /* EngineType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineType.swift; sourceTree = "<group>"; };
+		74D2552D220DE8F4003A2054 /* MockVehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVehiclesView.swift; sourceTree = "<group>"; };
+		74D2552F220DE974003A2054 /* VehiclesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModelTests.swift; sourceTree = "<group>"; };
+		74D25531220DEA9C003A2054 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +225,7 @@
 				744EB33E220B4E1600528089 /* Vehicles.storyboard */,
 				744EB342220B4E2F00528089 /* VehiclesViewController.swift */,
 				744EB346220B4E4400528089 /* VehiclesViewModel.swift */,
+				744EB358220B6AF500528089 /* VehiclesTableViewCell.swift */,
 			);
 			path = Vehicles;
 			sourceTree = "<group>";
@@ -244,6 +259,7 @@
 			children = (
 				744EB33C220B4DE600528089 /* Extentions */,
 				744EB33B220B4DE100528089 /* Constants */,
+				744EB35A220B6CB500528089 /* WMCoder.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -251,6 +267,8 @@
 		744EB33B220B4DE100528089 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				744EB35E220B716E00528089 /* VehiclePartStatus.swift */,
+				744EB360220B721400528089 /* EngineType.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -272,6 +290,7 @@
 		744EB34E220B4F0D00528089 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				74D25531220DEA9C003A2054 /* MockNetworkService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -279,8 +298,26 @@
 		744EB34F220B4F1200528089 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				74D25533220DEBCD003A2054 /* Map */,
+				74D2552C220DE8EB003A2054 /* Vehicles */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		74D2552C220DE8EB003A2054 /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				74D2552D220DE8F4003A2054 /* MockVehiclesView.swift */,
+				74D2552F220DE974003A2054 /* VehiclesViewModelTests.swift */,
+			);
+			path = Vehicles;
+			sourceTree = "<group>";
+		};
+		74D25533220DEBCD003A2054 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,10 +455,14 @@
 				744EB303220B4CF200528089 /* AppDelegate.swift in Sources */,
 				744EB349220B4E4F00528089 /* MapViewModel.swift in Sources */,
 				744EB355220B678500528089 /* VehicleData.swift in Sources */,
+				744EB361220B721400528089 /* EngineType.swift in Sources */,
 				744EB347220B4E4400528089 /* VehiclesViewModel.swift in Sources */,
+				744EB359220B6AF500528089 /* VehiclesTableViewCell.swift in Sources */,
+				744EB35B220B6CB500528089 /* WMCoder.swift in Sources */,
 				744EB357220B67C900528089 /* VehiclesData.swift in Sources */,
 				744EB345220B4E3600528089 /* MapViewController.swift in Sources */,
 				744EB34D220B4EA500528089 /* PermissionManager.swift in Sources */,
+				744EB35F220B716E00528089 /* VehiclePartStatus.swift in Sources */,
 				744EB34B220B4E9200528089 /* NetworkService.swift in Sources */,
 				744EB353220B648F00528089 /* ErrorModel.swift in Sources */,
 				744EB351220B647E00528089 /* BaseModel.swift in Sources */,
@@ -433,7 +474,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D25532220DEA9C003A2054 /* MockNetworkService.swift in Sources */,
+				74D25530220DE974003A2054 /* VehiclesViewModelTests.swift in Sources */,
 				744EB318220B4CF400528089 /* WmappTests.swift in Sources */,
+				74D2552E220DE8F4003A2054 /* MockVehiclesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,7 +646,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.twinkly.Wmapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -620,7 +664,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.twinkly.Wmapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

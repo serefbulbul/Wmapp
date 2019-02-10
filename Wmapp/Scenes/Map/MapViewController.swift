@@ -14,8 +14,10 @@ protocol MapViewProtocol: AnyObject {
 
 class MapViewController: UIViewController {
 
+    public var vehicles: [VehicleData]?
+
     private var viewModel: MapViewModelProtocol?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
