@@ -94,6 +94,7 @@ extension VehiclesViewController: UITableViewDelegate, UITableViewDataSource {
         let mapViewController = storyboard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
 
         mapViewController.vehicles = viewModel?.vehicles
+        mapViewController.selectedVehicleIndex = indexPath.row
         
         navigationController?.pushViewController(mapViewController, animated: true)
     }

@@ -29,7 +29,7 @@ class VehiclesViewModelTests: XCTestCase {
     
     func testRequestVehiclesData_success() {
         let vehiclesData = VehiclesData(vehicles: [])
-        vehiclesData.vehicles.append(VehicleData(name: "vehicleName", address: "vehicleAddress", coordinates: [1.0, 1.0, 1.0], engineType: EngineType.ce, fuel: 10, exterior: VehiclePartStatus.good, interior: VehiclePartStatus.good, vin: "vehicleVin") )
+        vehiclesData.vehicles.append(VehicleData(name: "vehicleName", address: "vehicleAddress", coordinates: [1.0, 1.0, 1.0], engineType: EngineType.ce, fuel: 10, exterior: VehiclePartStatus.good, interior: VehiclePartStatus.good, vin: "vehicleVin"))
         
         networkService.vehiclesData = vehiclesData
         

@@ -13,6 +13,7 @@ protocol PermissionManagerProtocol {
     
     static var instance: PermissionManagerProtocol { get }
     
+    func checkPermission()
 }
 
 final class PermissionManager: NSObject, PermissionManagerProtocol {
@@ -30,9 +31,9 @@ final class PermissionManager: NSObject, PermissionManagerProtocol {
     func checkPermission() {
         switch CLLocationManager.authorizationStatus() {
         case .denied, .restricted:
-            print()
+            return
         case .authorizedAlways, .authorizedWhenInUse:
-            print()
+            return
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         }
@@ -43,9 +44,7 @@ final class PermissionManager: NSObject, PermissionManagerProtocol {
 extension PermissionManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedAlways || status == .authorizedWhenInUse {
-            
-        }
+        
     }
     
 }

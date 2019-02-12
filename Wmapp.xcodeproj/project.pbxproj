@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7408A7B02213179B00FDE458 /* VehicleMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7408A7AF2213179B00FDE458 /* VehicleMarkerView.swift */; };
+		7408A7B42213520000FDE458 /* MockMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7408A7B32213520000FDE458 /* MockMapView.swift */; };
+		7408A7B62213520A00FDE458 /* MapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7408A7B52213520A00FDE458 /* MapViewModelTests.swift */; };
 		744EB303220B4CF200528089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EB302220B4CF200528089 /* AppDelegate.swift */; };
 		744EB30A220B4CF400528089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744EB309220B4CF400528089 /* Assets.xcassets */; };
 		744EB30D220B4CF400528089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744EB30B220B4CF400528089 /* LaunchScreen.storyboard */; };
@@ -31,6 +34,8 @@
 		74D2552E220DE8F4003A2054 /* MockVehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2552D220DE8F4003A2054 /* MockVehiclesView.swift */; };
 		74D25530220DE974003A2054 /* VehiclesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2552F220DE974003A2054 /* VehiclesViewModelTests.swift */; };
 		74D25532220DEA9C003A2054 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D25531220DEA9C003A2054 /* MockNetworkService.swift */; };
+		74D25537221061F3003A2054 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D25536221061F3003A2054 /* VehicleAnnotation.swift */; };
+		74D255392210629A003A2054 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D255382210629A003A2054 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7408A7AF2213179B00FDE458 /* VehicleMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMarkerView.swift; sourceTree = "<group>"; };
+		7408A7B32213520000FDE458 /* MockMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMapView.swift; sourceTree = "<group>"; };
+		7408A7B52213520A00FDE458 /* MapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTests.swift; sourceTree = "<group>"; };
 		744EB2FF220B4CF200528089 /* Wmapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wmapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		744EB302220B4CF200528089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		744EB309220B4CF400528089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +89,8 @@
 		74D2552D220DE8F4003A2054 /* MockVehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVehiclesView.swift; sourceTree = "<group>"; };
 		74D2552F220DE974003A2054 /* VehiclesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModelTests.swift; sourceTree = "<group>"; };
 		74D25531220DEA9C003A2054 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		74D25536221061F3003A2054 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
+		74D255382210629A003A2054 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +286,7 @@
 		744EB33C220B4DE600528089 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				74D255382210629A003A2054 /* UIColorExtensions.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -283,6 +294,8 @@
 		744EB33D220B4DEF00528089 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				74D25536221061F3003A2054 /* VehicleAnnotation.swift */,
+				7408A7AF2213179B00FDE458 /* VehicleMarkerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,6 +329,8 @@
 		74D25533220DEBCD003A2054 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				7408A7B32213520000FDE458 /* MockMapView.swift */,
+				7408A7B52213520A00FDE458 /* MapViewModelTests.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -461,12 +476,15 @@
 				744EB35B220B6CB500528089 /* WMCoder.swift in Sources */,
 				744EB357220B67C900528089 /* VehiclesData.swift in Sources */,
 				744EB345220B4E3600528089 /* MapViewController.swift in Sources */,
+				74D255392210629A003A2054 /* UIColorExtensions.swift in Sources */,
 				744EB34D220B4EA500528089 /* PermissionManager.swift in Sources */,
 				744EB35F220B716E00528089 /* VehiclePartStatus.swift in Sources */,
 				744EB34B220B4E9200528089 /* NetworkService.swift in Sources */,
 				744EB353220B648F00528089 /* ErrorModel.swift in Sources */,
 				744EB351220B647E00528089 /* BaseModel.swift in Sources */,
+				7408A7B02213179B00FDE458 /* VehicleMarkerView.swift in Sources */,
 				744EB343220B4E2F00528089 /* VehiclesViewController.swift in Sources */,
+				74D25537221061F3003A2054 /* VehicleAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,10 +492,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7408A7B42213520000FDE458 /* MockMapView.swift in Sources */,
 				74D25532220DEA9C003A2054 /* MockNetworkService.swift in Sources */,
 				74D25530220DE974003A2054 /* VehiclesViewModelTests.swift in Sources */,
 				744EB318220B4CF400528089 /* WmappTests.swift in Sources */,
 				74D2552E220DE8F4003A2054 /* MockVehiclesView.swift in Sources */,
+				7408A7B62213520A00FDE458 /* MapViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

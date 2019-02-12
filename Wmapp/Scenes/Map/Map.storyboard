@@ -17,13 +17,31 @@
                     <view key="view" contentMode="scaleToFill" id="apj-ZF-BmP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJQ-U0-d4G">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Wq5-YP-RTC" id="qJX-0h-X7E"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VJQ-U0-d4G" firstAttribute="bottom" secondItem="cTZ-bb-BmD" secondAttribute="bottom" id="Dyc-ob-mHS"/>
+                            <constraint firstItem="VJQ-U0-d4G" firstAttribute="leading" secondItem="cTZ-bb-BmD" secondAttribute="leading" id="LkW-0s-DFt"/>
+                            <constraint firstItem="VJQ-U0-d4G" firstAttribute="top" secondItem="cTZ-bb-BmD" secondAttribute="top" id="a0Y-eu-2As"/>
+                            <constraint firstItem="VJQ-U0-d4G" firstAttribute="trailing" secondItem="cTZ-bb-BmD" secondAttribute="trailing" id="yDD-Lv-hA2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cTZ-bb-BmD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="Cco-FB-wyY"/>
+                    <connections>
+                        <outlet property="mapView" destination="VJQ-U0-d4G" id="06b-6M-9m5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4g-7F-Wkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
         </scene>
     </scenes>
 </document>
